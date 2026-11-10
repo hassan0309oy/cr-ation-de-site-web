@@ -54,7 +54,7 @@ export function Shop({ lang }: { lang: Lang }) {
       {/* Trust */}
       <section className="mx-auto max-w-6xl px-5">
         <div className="reveal grid grid-cols-2 gap-4 rounded-3xl bg-card p-6 shadow-soft md:grid-cols-4">
-          {t.trust.map((label, i) => { const I = trustIcons[i]; return (
+          {t.trust.map((label, i) => { const I = trustIcons[i] ?? ChefHat; return (
             <div key={label} className="flex flex-col items-center gap-2 text-center">
               <span className="grid h-12 w-12 place-items-center rounded-full bg-secondary text-primary"><I className="h-6 w-6" /></span>
               <span className="text-sm font-semibold">{label}</span>
